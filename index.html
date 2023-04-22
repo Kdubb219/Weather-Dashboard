@@ -7,11 +7,25 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
-        <h1>Welcome to My Website</h1>  
+        <h1>Welcome to the Weather Dashboard</h1> 
+        <div>
+          <table>
+            <tr>
+              <td>
+                <div>Enter your City</div>
+                <input type="text" id="txtCity">
+                <button onclick= GetWeather()>Search</button>
+
+              </td> 
+              <td></td>
+            </tr>
+          </table>
+        </div>
     </main>
-	<script src="index.js"></script>
   </body>
 </html>

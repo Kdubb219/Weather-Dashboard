@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to the Weather Dashboard</h1> 
-        <div>
-          <table>
-            <tr>
-              <td>
-                <div>Enter your City</div>
-                <input type="text" id="txtCity">
-                <button onclick= GetWeather()>Search</button>
 
-              </td> 
-              <td>
-                <div id="currentCity"></div>
-                <div id="temp"></div>
-                <div id="wind"></div>
-                <div id="humidity"></div>
-              </td>
-            </tr>
-          </table>
-        </div>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <h1>Welcome to the Weather Dashboard</h1>
+    <p id="test1">
+      <img id="test" src="" alt="">
+    </p>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <div>Enter your City</div>
+            <input type="text" id="txtCity">
+            <button onclick=GetWeather()>Search</button>
+
+          </td>
+          <td>
+          <div>
+            <div class="weather-container">
+              <h1 class="city-name">City Name</h1>
+              <div class="weather-info">
+                <h4> <img class="weather-icon" src="http://openweathermap.org/img/wn/03n@4x.png" alt="Weather Icon"></h4>
+                <div class="temperature">25°F</div>
+              </div>
+              <div class="weather-description">Partly cloudy</div>
+            </div>
+          </div>
+          </td>
+        </tr>
+      </table>
+      <div class="cities">
+        
+      </div>
+    </div>
+
+  </main>
+</body>
+
 </html>

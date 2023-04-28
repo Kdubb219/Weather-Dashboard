@@ -41,7 +41,7 @@ function GetLocation(address) {
                     $('.weather-description').html(weather.weather[0].description);
                     $('.temperature').html(weather.main.temp + "°F");
 
-                    $('.weather-icon').attr('src', "http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@4x.png");
+                    $('.weather-icon').attr('src', "https://openweathermap.org/img/wn/" + weather.weather[0].icon + "@4x.png");
                     // var url2= 'http://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&appid=' + apiKey;
                 });
         });

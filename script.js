@@ -27,7 +27,7 @@ function GetWeatherbyCity(city){
 
 
 function GetLocation(address) {
-    var url = 'http://api.openweathermap.org/geo/1.0/direct?q=' + address + '&limit=0&appid=' + apiKey;
+    var url = 'https://api.openweathermap.org/geo/1.0/direct?q=' + address + '&limit=0&appid=' + apiKey;
     return FetchLocation(url)
         .then(location => {
             var lat = location[0].lat;

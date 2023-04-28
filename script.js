@@ -57,5 +57,4 @@ async function FetchWeather(url) {
     const myJson = await response.json();
     console.log(myJson);
     return myJson;
-
 }
